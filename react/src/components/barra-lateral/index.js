@@ -14,7 +14,7 @@ export default function barraLateral(){
                 </svg></div></div>
                 <div className = "opcao1">
                     <div className="barrinha"><svg width="4" height="56" viewBox="0 0 4 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="4" height="798" fill="#DB21BD"/>
+                        <rect width="4" height="798" fill="#10EAEA"/>
                         </svg></div>
                     <div className = "nome-opcao">Alunos</div></div></div>
             

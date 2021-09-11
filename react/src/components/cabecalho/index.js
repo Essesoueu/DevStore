@@ -7,10 +7,10 @@ export default function Cabecalho() {
     return (
         <ContainerCabecalho>   
            <div className = "identidade">  
-            <div className = "logo"> <svg width="42" height="42" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5.33331 26C5.33331 25.1159 5.6845 24.2681 6.30962 23.643C6.93474 23.0178 7.78259 22.6667 8.66665 22.6667H26.6666" stroke="#DB21BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M8.66665 2.66666H26.6666V29.3333H8.66665C7.78259 29.3333 6.93474 28.9821 6.30962 28.357C5.6845 27.7319 5.33331 26.884 5.33331 26V5.99999C5.33331 5.11593 5.6845 4.26809 6.30962 3.64297C6.93474 3.01785 7.78259 2.66666 8.66665 2.66666V2.66666Z" stroke="#DB21BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg></div>
+            <div className = "logo"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.65 14.39L12 22.13L1.35002 14.39C1.20725 14.285 1.10134 14.1375 1.04746 13.9687C0.993572 13.7998 0.99447 13.6183 1.05002 13.45L2.27002 9.66999L4.71002 2.15999C4.73369 2.0988 4.77136 2.044 4.82002 1.99999C4.89926 1.92761 5.0027 1.88748 5.11002 1.88748C5.21734 1.88748 5.32078 1.92761 5.40002 1.99999C5.45141 2.04966 5.48927 2.11161 5.51002 2.17999L7.95002 9.66999H16.05L18.49 2.15999C18.5137 2.0988 18.5514 2.044 18.6 1.99999C18.6793 1.92761 18.7827 1.88748 18.89 1.88748C18.9973 1.88748 19.1008 1.92761 19.18 1.99999C19.2314 2.04966 19.2693 2.11161 19.29 2.17999L21.73 9.68999L23 13.45C23.0505 13.6235 23.0438 13.8086 22.9807 13.978C22.9177 14.1473 22.8017 14.2918 22.65 14.39V14.39Z" stroke="#10EAEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
            <div className = "titulo"> <h1> Dev<span>Schools</span> </h1> </div>
            </div>
         </ContainerCabecalho>
@@ -30,7 +30,7 @@ function Cabecalho2 (){
                 <div className="foto"><img src="/assets/images/perfilft.jpg" alt="" /> 
                 </div>
                 <div className="bola"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10" cy="10" r="9" fill="#DB21BD" stroke="white" stroke-width="2"/>
+<circle cx="10" cy="10" r="9" fill="#119FDC" stroke="white" stroke-width="2"/>
 </svg>
 </div>
                 <div className="wllcome">olá, <span> Fimosinha478</span></div>

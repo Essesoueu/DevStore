@@ -6,40 +6,53 @@ const api = axios.create({
 
 
 export default class Api {
-    async cadastrarAluno(aluno, chamada, curso, turma) {
+    async cadastrarProduto(nm_produto,ds_categoria,vl_preco_de,vl_preco_por,vl_avaliacao,ds_produto,qtd_estoque,img_produto ) {
 
-        let alunoJson = {
-            nm_aluno: aluno,
-            nr_chamada: chamada,
-            nm_curso: curso,
-            nm_turma: turma
+        let produtoJson = {
+            nm_produto: nm_produto ,
+            ds_categoria: ds_categoria,
+            vl_preco_de: vl_preco_de,
+            vl_preco_por: vl_preco_por,
+            vl_avaliacao: vl_avaliacao,
+            ds_produto: ds_produto,
+            qtd_estoque: qtd_estoque,
+            img_produto: img_produto,
+            bt_ativo: true,
+            dt_inclusao: new Date()
         };
         
-        let r = await api.post('/matricula', alunoJson);
+        let r = await api.post('/produto', produtoJson);
         return r.data;
     }
 
-    async listarAlunos(){
-        let r = await api.get('/matricula')
+    async listarProdutos(){
+        let r = await api.get('/produto')
         return r.data;
     }
 
-    async alterarAluno(idAluno, aluno, chamada, curso, turma) {
+    async alterarProduto(id,nm_produto,ds_categoria,vl_preco_de,vl_preco_por,vl_avaliacao,ds_produto,qtd_estoque,img_produto) {
 
-        let alunoJson = {
-            nm_aluno: aluno,
-            nr_chamada: chamada,
-            nm_curso: curso,
-            nm_turma: turma
+       
+        let produtoJson = {
+            nm_produto: nm_produto ,
+            ds_categoria: ds_categoria,
+            vl_preco_de: vl_preco_de,
+            vl_preco_por: vl_preco_por,
+            vl_avaliacao: vl_avaliacao,
+            ds_produto: ds_produto,
+            qtd_estoque: qtd_estoque,
+            img_produto: img_produto,
+            bt_ativo: true,
+            dt_inclusao: new Date()
         };
         
-        let r = await api.put(`/matricula/${idAluno}`, alunoJson);
+        let r = await api.put(`/produto/${id}`, produtoJson);
         return r.data;
     }
 
 
-    async deletarAluno(idAluno){
-        let r = api.delete(`/matricula/${idAluno}`)
+    async deletarProduto(idAluno){
+        let r = api.delete(`/produto/${idAluno}`)
         return r.data;
     }
 }

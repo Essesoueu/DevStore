@@ -16,7 +16,8 @@ border-radius: 1em 0em 0em 0em;
 }
 
 .logo {
- padding-right: 0.8em;
+    display: flex;
+ padding-right: 0.4em;
 }
 
 .titulo {
@@ -26,7 +27,7 @@ font-weight: bold;
 font-size: 15px;
 line-height: 33px;
 
-color: #EA10C7;
+color:#10EAEA;
 }
 
 span {
@@ -97,7 +98,7 @@ width: 100%;
 }
 .atualize {
     border-radius: 27em;
-    background-color: #986CDF;
+    background-color: #119FDC;
     border: none;
     padding: 0.7em;
 }

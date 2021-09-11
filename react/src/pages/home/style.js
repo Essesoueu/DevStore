@@ -14,6 +14,7 @@ display: flex;
 flex-direction: column;
 background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #F5F5F5;
 width: 100%;
+height: 100vh;
 .cadastro{
     display: flex;
     align-self: center;
@@ -31,10 +32,10 @@ width: 100%;
     padding-left: 2.5em;
 }
 .barrinha {
-    border: 6px solid #986CDF;
+    border: 6px solid #119FDC;
     transform: rotate(-90deg);
-    background-color: #986CDF;
-    color: #986CDF; 
+    background-color: #119FDC;
+    color: #119FDC; 
     border-radius: 5em;
     font-size: 1px;
     height: 5px;
@@ -52,7 +53,8 @@ width: 100%;
 .box-cadastro{
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    flex-direction: row;
+    width: 73%;
     height:30%;
    
    margin-top: 7em;
@@ -63,7 +65,7 @@ width: 100%;
 .box-cadastro > div {
     display: flex;
     flex-wrap: wrap;
-    
+    flex-direction: row;
 }
 
 .label {
@@ -81,12 +83,26 @@ width: 100%;
 .input {
     padding-top: 0.5em;
     margin-right: 6em;
-    margin-left: 6em;
+    margin-left: 8em;
+}
+
+.img {
+ margin-left: 11em;
+ width: 42em;
+ padding-top: 0.5em;
+}
+
+.texta {
+    display: flex;
+    margin-top: 2em;
+    padding-bottom: 9.5em;
+    margin-right: 6em;
+    margin-left: 8em;
 }
 
 .cadastrar{
     align-self: flex-end;
-    padding-bottom: 5.3em;
+    padding-bottom: 5em;
     font-size: 14px;
 }
 
@@ -137,7 +153,7 @@ td svg {
 thead{
     height: 5em;
     font-size: 18px;
-    background-color: #986CDF;
+    background-color: #119FDC;
 
     
 }
