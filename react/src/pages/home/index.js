@@ -61,13 +61,7 @@ export default function Home() {
         return false;
     }
 
-    const validarResposta2 = (r) => {
-        if (!r.erros)
-            return true;
-            toast.error(`${r.erros}`);
-
-        return false;
-    }
+    
     const cadastrarproduto = async () => {
 
         if (vl_preco_de < 0 || vl_preco_por < 0 || vl_avaliacao < 0 || qtd_estoque < 0){
@@ -216,7 +210,7 @@ export default function Home() {
                             <tr className={i % 2 === 0 ?"int" :""}>
                                 <td className="icon"><img src={x.img_produto} alt="" /></td>
                                 <td className = "id">{x.id_produto}</td>
-                                <td className="nm"> {x.nm_produto != null && x.nm_produto.length >= 30 ? x.nm_produto.substr(0, 30) + '...' : x.nm_produto}
+                                <td className="nm" title={x.nm_produto}> {x.nm_produto != null && x.nm_produto.length >= 30 ? x.nm_produto.substr(0, 30) + '...' : x.nm_produto}
                                 </td>
                                 <td className="chamada">{x.ds_categoria}</td>
                                 <td className="turma">{x.vl_preco_de}</td>
