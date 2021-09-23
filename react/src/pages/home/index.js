@@ -178,7 +178,7 @@ export default function Home() {
                       </div>
                       <div>
                         <div className = "label">Link da imagem:</div>
-                        <CharInput className = "input" className="img" value={img_produto} onChange={e => setImg_produto(e.target.value)}/>
+                        <CharInput className = "input"  value={img_produto} onChange={e => setImg_produto(e.target.value)}/>
                       </div>
                       <div>
                         <div className = "label">Descrição:</div>
