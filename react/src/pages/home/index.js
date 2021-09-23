@@ -73,7 +73,7 @@ export default function Home() {
             return toast.error("nenhum campo pode estar vazio");
 
             ref.current.continuousStart();
-        if (idalterando == 0){
+        if (idalterando === 0){
             
         const r = await api.cadastrarProduto(produto, categoria, vl_preco_de, vl_preco_por, vl_avaliacao, ds_produto, qtd_estoque, img_produto)
         if (!validarResposta(r)){
@@ -118,7 +118,8 @@ export default function Home() {
               {
                 label: 'Yes',
                 onClick: async () => {
-                    const r = await api.deletarProduto(item.id_produto);  
+                    const r = await api.deletarProduto(item.id_produto); 
+                    console.log(r) 
                     toast.success(`${item.nm_produto} deletado com sucesso`)
                     atualizar();
                 }
@@ -152,36 +153,36 @@ export default function Home() {
                     </div>
                   <div className = "box-cadastro">
                       <div>
-                      <div className = "label">Nome</div>
-                      <CharInput className = "input" value={produto} onChange={e => setProduto(e.target.value)}/>
+                        <div className = "label">Nome</div>
+                        <CharInput className = "input" value={produto} onChange={e => setProduto(e.target.value)}/>
                       </div>
                       <div>
-                      <div className = "label">Preço de:</div>
-                      <CharInput className = "input" value={vl_preco_de} onChange={e => setVl_preco_de(e.target.value)}/>
+                        <div className = "label">Preço de:</div>
+                         <CharInput className = "input" value={vl_preco_de} onChange={e => setVl_preco_de(e.target.value)}/>
                       </div>
                       <div>
-                      <div className = "label">Categoria</div>
-                      <CharInput className = "input" value={categoria} onChange={e => setCategoria(e.target.value)}/>
+                        <div className = "label">Categoria</div>
+                        <CharInput className = "input" value={categoria} onChange={e => setCategoria(e.target.value)}/>
                       </div>
                       <div>
-                      <div className = "label">Preço por:</div>
-                      <CharInput className = "input" value={vl_preco_por} onChange={e => setVl_preco_por(e.target.value)}/>
+                        <div className = "label">Preço por:</div>
+                        <CharInput className = "input" value={vl_preco_por} onChange={e => setVl_preco_por(e.target.value)}/>
                       </div>
                       <div>
-                      <div className = "label"> Avaliação:</div>
-                      <CharInput className = "input" value={vl_avaliacao} onChange={e => setVl_avaliacao(e.target.value)}/>
+                        <div className = "label"> Avaliação:</div>
+                        <CharInput className = "input" value={vl_avaliacao} onChange={e => setVl_avaliacao(e.target.value)}/>
                       </div>
                       <div>
-                      <div className = "label">Estoque:</div>
-                      <CharInput className = "input" value={qtd_estoque} onChange={e => setQtd_estoque(e.target.value)}/>
+                         <div className = "label">Estoque:</div>
+                        <CharInput className = "input" value={qtd_estoque} onChange={e => setQtd_estoque(e.target.value)}/>
                       </div>
                       <div>
-                      <div className = "label">Link da imagem:</div>
-                      <CharInput className = "input" className="img" value={img_produto} onChange={e => setImg_produto(e.target.value)}/>
+                        <div className = "label">Link da imagem:</div>
+                        <CharInput className = "input" className="img" value={img_produto} onChange={e => setImg_produto(e.target.value)}/>
                       </div>
                       <div>
-                      <div className = "label">Descrição:</div>
-                      <Chartextarea className="texta" value={ds_produto} onChange={e => setDs_produto(e.target.value)}/>
+                        <div className = "label">Descrição:</div>
+                        <Chartextarea className="texta" value={ds_produto} onChange={e => setDs_produto(e.target.value)}/>
                       </div>
                     </div>
             
